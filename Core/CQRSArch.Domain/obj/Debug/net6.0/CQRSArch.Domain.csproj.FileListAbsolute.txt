@@ -1,0 +1,12 @@
+F:\Companies\Github Projects\Architectures\CQRSArch\Core\CQRSArch.Domain\bin\Debug\net6.0\CQRSArch.Domain.deps.json
+F:\Companies\Github Projects\Architectures\CQRSArch\Core\CQRSArch.Domain\bin\Debug\net6.0\CQRSArch.Domain.dll
+F:\Companies\Github Projects\Architectures\CQRSArch\Core\CQRSArch.Domain\bin\Debug\net6.0\CQRSArch.Domain.pdb
+F:\Companies\Github Projects\Architectures\CQRSArch\Core\CQRSArch.Domain\obj\Debug\net6.0\CQRSArch.Domain.csproj.AssemblyReference.cache
+F:\Companies\Github Projects\Architectures\CQRSArch\Core\CQRSArch.Domain\obj\Debug\net6.0\CQRSArch.Domain.GeneratedMSBuildEditorConfig.editorconfig
+F:\Companies\Github Projects\Architectures\CQRSArch\Core\CQRSArch.Domain\obj\Debug\net6.0\CQRSArch.Domain.AssemblyInfoInputs.cache
+F:\Companies\Github Projects\Architectures\CQRSArch\Core\CQRSArch.Domain\obj\Debug\net6.0\CQRSArch.Domain.AssemblyInfo.cs
+F:\Companies\Github Projects\Architectures\CQRSArch\Core\CQRSArch.Domain\obj\Debug\net6.0\CQRSArch.Domain.csproj.CoreCompileInputs.cache
+F:\Companies\Github Projects\Architectures\CQRSArch\Core\CQRSArch.Domain\obj\Debug\net6.0\CQRSArch.Domain.dll
+F:\Companies\Github Projects\Architectures\CQRSArch\Core\CQRSArch.Domain\obj\Debug\net6.0\refint\CQRSArch.Domain.dll
+F:\Companies\Github Projects\Architectures\CQRSArch\Core\CQRSArch.Domain\obj\Debug\net6.0\CQRSArch.Domain.pdb
+F:\Companies\Github Projects\Architectures\CQRSArch\Core\CQRSArch.Domain\obj\Debug\net6.0\ref\CQRSArch.Domain.dll

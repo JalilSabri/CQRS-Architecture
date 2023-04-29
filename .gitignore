@@ -1,0 +1,11 @@
+.vs
+Core\CQRSArch.Application\bin
+Core\CQRSArch.Application\Obj
+Core\CQRSArch.Domain\bin
+Core\CQRSArch.Domain\Obj
+Infrastructure\CQRSArch.Infrastructure.IoC\bin
+Infrastructure\CQRSArch.Infrastructure.IoC\Obj
+Persistence\CQRSArch.Persistence.Data\bin
+Persistence\CQRSArch.Persistence.Data\Obj
+Presentation\CQRSArch.RazorPageUI\bin
+Presentation\CQRSArch.RazorPageUI\obj

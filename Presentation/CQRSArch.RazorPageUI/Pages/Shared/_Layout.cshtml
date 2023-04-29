@@ -1,0 +1,24 @@
+﻿<!Doctype html>
+<html>
+<head>
+
+    <script type="text/javascript" src="~/lib/bootstrap/dis/js/bootstrap.js"></script>
+    <script type="text/javascript" src="~/js/general.js"></script>
+    <!-- ----------------------------------------------------------------------------- Site Css ----------------------------------------------------------------------------------- -->
+    <link rel="stylesheet" href="~/lib/bootstrap/dis/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/css/layout.css" />
+</head>
+<body>
+    <h2 style="margin:0px 0px 10px 0px ; padding:10px 0px 10px 0px; border-bottom: yellowgreen solid 1px; text-align:center; color:maroon">
+        CQRS Architecture Sample
+    </h2>
+    <div class="mainmenu">
+        <a href="#" id="btnShowStudents" class="btn btn-dark" onclick="ShowMessage();">Students</a>
+        <a href="#" id="btnShowCourses" class="btn btn-warning">Courses</a>
+        <a href="#" id="btnShowCoursesStudent" class="btn btn-danger">Courses Students</a>
+    </div>
+    <div class="container">
+        @RenderBody()
+    </div>
+</body>
+</html>

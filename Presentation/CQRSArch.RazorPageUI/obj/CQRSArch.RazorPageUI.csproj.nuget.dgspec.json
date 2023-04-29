@@ -1,0 +1,372 @@
+{
+  "format": 1,
+  "restore": {
+    "F:\\Companies\\Github Projects\\Architectures\\CQRSArch\\Presentation\\CQRSArch.RazorPageUI\\CQRSArch.RazorPageUI.csproj": {}
+  },
+  "projects": {
+    "F:\\Companies\\Github Projects\\Architectures\\CQRSArch\\Core\\CQRSArch.Application\\CQRSArch.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\Companies\\Github Projects\\Architectures\\CQRSArch\\Core\\CQRSArch.Application\\CQRSArch.Application.csproj",
+        "projectName": "CQRSArch.Application",
+        "projectPath": "F:\\Companies\\Github Projects\\Architectures\\CQRSArch\\Core\\CQRSArch.Application\\CQRSArch.Application.csproj",
+        "packagesPath": "C:\\Users\\JalilSabri\\.nuget\\packages\\",
+        "outputPath": "F:\\Companies\\Github Projects\\Architectures\\CQRSArch\\Core\\CQRSArch.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\JalilSabri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "F:\\Companies\\Github Projects\\Architectures\\CQRSArch\\Core\\CQRSArch.Domain\\CQRSArch.Domain.csproj": {
+                "projectPath": "F:\\Companies\\Github Projects\\Architectures\\CQRSArch\\Core\\CQRSArch.Domain\\CQRSArch.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.0, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\Companies\\Github Projects\\Architectures\\CQRSArch\\Core\\CQRSArch.Domain\\CQRSArch.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\Companies\\Github Projects\\Architectures\\CQRSArch\\Core\\CQRSArch.Domain\\CQRSArch.Domain.csproj",
+        "projectName": "CQRSArch.Domain",
+        "projectPath": "F:\\Companies\\Github Projects\\Architectures\\CQRSArch\\Core\\CQRSArch.Domain\\CQRSArch.Domain.csproj",
+        "packagesPath": "C:\\Users\\JalilSabri\\.nuget\\packages\\",
+        "outputPath": "F:\\Companies\\Github Projects\\Architectures\\CQRSArch\\Core\\CQRSArch.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\JalilSabri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\Companies\\Github Projects\\Architectures\\CQRSArch\\Infrastructure\\CQRSArch.Infrastructure.IoC\\CQRSArch.Infrastructure.IoC.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\Companies\\Github Projects\\Architectures\\CQRSArch\\Infrastructure\\CQRSArch.Infrastructure.IoC\\CQRSArch.Infrastructure.IoC.csproj",
+        "projectName": "CQRSArch.Infrastructure.IoC",
+        "projectPath": "F:\\Companies\\Github Projects\\Architectures\\CQRSArch\\Infrastructure\\CQRSArch.Infrastructure.IoC\\CQRSArch.Infrastructure.IoC.csproj",
+        "packagesPath": "C:\\Users\\JalilSabri\\.nuget\\packages\\",
+        "outputPath": "F:\\Companies\\Github Projects\\Architectures\\CQRSArch\\Infrastructure\\CQRSArch.Infrastructure.IoC\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\JalilSabri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "F:\\Companies\\Github Projects\\Architectures\\CQRSArch\\Core\\CQRSArch.Application\\CQRSArch.Application.csproj": {
+                "projectPath": "F:\\Companies\\Github Projects\\Architectures\\CQRSArch\\Core\\CQRSArch.Application\\CQRSArch.Application.csproj"
+              },
+              "F:\\Companies\\Github Projects\\Architectures\\CQRSArch\\Persistence\\CQRSArch.Persistence.Data\\CQRSArch.Persistence.Data.csproj": {
+                "projectPath": "F:\\Companies\\Github Projects\\Architectures\\CQRSArch\\Persistence\\CQRSArch.Persistence.Data\\CQRSArch.Persistence.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\Companies\\Github Projects\\Architectures\\CQRSArch\\Persistence\\CQRSArch.Persistence.Data\\CQRSArch.Persistence.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\Companies\\Github Projects\\Architectures\\CQRSArch\\Persistence\\CQRSArch.Persistence.Data\\CQRSArch.Persistence.Data.csproj",
+        "projectName": "CQRSArch.Persistence.Data",
+        "projectPath": "F:\\Companies\\Github Projects\\Architectures\\CQRSArch\\Persistence\\CQRSArch.Persistence.Data\\CQRSArch.Persistence.Data.csproj",
+        "packagesPath": "C:\\Users\\JalilSabri\\.nuget\\packages\\",
+        "outputPath": "F:\\Companies\\Github Projects\\Architectures\\CQRSArch\\Persistence\\CQRSArch.Persistence.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\JalilSabri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "F:\\Companies\\Github Projects\\Architectures\\CQRSArch\\Core\\CQRSArch.Application\\CQRSArch.Application.csproj": {
+                "projectPath": "F:\\Companies\\Github Projects\\Architectures\\CQRSArch\\Core\\CQRSArch.Application\\CQRSArch.Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\Companies\\Github Projects\\Architectures\\CQRSArch\\Presentation\\CQRSArch.RazorPageUI\\CQRSArch.RazorPageUI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\Companies\\Github Projects\\Architectures\\CQRSArch\\Presentation\\CQRSArch.RazorPageUI\\CQRSArch.RazorPageUI.csproj",
+        "projectName": "CQRSArch.RazorPageUI",
+        "projectPath": "F:\\Companies\\Github Projects\\Architectures\\CQRSArch\\Presentation\\CQRSArch.RazorPageUI\\CQRSArch.RazorPageUI.csproj",
+        "packagesPath": "C:\\Users\\JalilSabri\\.nuget\\packages\\",
+        "outputPath": "F:\\Companies\\Github Projects\\Architectures\\CQRSArch\\Presentation\\CQRSArch.RazorPageUI\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\JalilSabri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "F:\\Companies\\Github Projects\\Architectures\\CQRSArch\\Infrastructure\\CQRSArch.Infrastructure.IoC\\CQRSArch.Infrastructure.IoC.csproj": {
+                "projectPath": "F:\\Companies\\Github Projects\\Architectures\\CQRSArch\\Infrastructure\\CQRSArch.Infrastructure.IoC\\CQRSArch.Infrastructure.IoC.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

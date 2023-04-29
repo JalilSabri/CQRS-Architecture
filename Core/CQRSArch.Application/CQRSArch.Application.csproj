@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Features\Student\**" />
+    <EmbeddedResource Remove="Features\Student\**" />
+    <None Remove="Features\Student\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Contracts\Infrastructure\" />
+    <Folder Include="Features\CourseStudents\Handlers\Commands\" />
+    <Folder Include="Features\CourseStudents\Handlers\Queires\" />
+    <Folder Include="Features\CourseStudents\Requests\Commands\" />
+    <Folder Include="Features\CourseStudents\Requests\Queires\" />
+    <Folder Include="Features\Courses\Handlers\Commands\" />
+    <Folder Include="Features\Courses\Handlers\Queires\" />
+    <Folder Include="Features\Courses\Requests\Commands\" />
+    <Folder Include="Features\Courses\Requests\Queires\" />
+    <Folder Include="Features\Students\Handlers\Commands\" />
+    <Folder Include="Features\Students\Handlers\Queires\" />
+    <Folder Include="Features\Students\Requests\Commands\" />
+    <Folder Include="Features\Students\Requests\Queires\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
+    <PackageReference Include="MediatR" Version="11.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CQRSArch.Domain\CQRSArch.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
