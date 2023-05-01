@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CQRSArch.Persistence.Data.Migrations
 {
     [DbContext(typeof(CQRSArchDBContext))]
-    [Migration("20230429113606_First 01")]
-    partial class First01
+    [Migration("20230501134155_First 02")]
+    partial class First02
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -33,36 +33,35 @@ namespace CQRSArch.Persistence.Data.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<string>("CourseTitle")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.Property<DateTime>("LastModified")
+                        .ValueGeneratedOnAddOrUpdate()
                         .HasColumnType("datetime2");
+
+                    b.Property<int?>("StudentId")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 
-                    b.ToTable("Courses");
+                    b.HasIndex("StudentId");
+
+                    b.ToTable("tblCourses", (string)null);
                 });
 
             modelBuilder.Entity("CourseStudent", b =>
                 {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
                     b.Property<int>("CourseId")
                         .HasColumnType("int");
-
-                    b.Property<DateTime>("LastModified")
-                        .HasColumnType("datetime2");
 
                     b.Property<int>("StudentId")
                         .HasColumnType("int");
 
-                    b.HasKey("Id");
+                    b.HasKey("CourseId", "StudentId");
 
-                    b.ToTable("CourseStudents");
+                    b.ToTable("tblCourseStudent", (string)null);
                 });
 
             modelBuilder.Entity("Student", b =>
@@ -73,20 +72,58 @@ namespace CQRSArch.Persistence.Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
-                    b.Property<string>("FirstName")
+                    b.Property<int?>("CourseId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("EntryDate")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("FirstName")
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
                     b.Property<DateTime>("LastModified")
+                        .ValueGeneratedOnAddOrUpdate()
                         .HasColumnType("datetime2");
 
                     b.Property<string>("LastName")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.HasKey("Id");
 
-                    b.ToTable("Students");
+                    b.HasIndex("CourseId");
+
+                    b.ToTable("tblStudents", (string)null);
+                });
+
+            modelBuilder.Entity("Course", b =>
+                {
+                    b.HasOne("CourseStudent", "CourseStudents")
+                        .WithMany("lstCourses")
+                        .HasForeignKey("StudentId")
+                        .HasPrincipalKey("CourseId");
+
+                    b.Navigation("CourseStudents");
+                });
+
+            modelBuilder.Entity("Student", b =>
+                {
+                    b.HasOne("CourseStudent", "StudentCourses")
+                        .WithMany("lstStudents")
+                        .HasForeignKey("CourseId")
+                        .HasPrincipalKey("StudentId");
+
+                    b.Navigation("StudentCourses");
+                });
+
+            modelBuilder.Entity("CourseStudent", b =>
+                {
+                    b.Navigation("lstCourses");
+
+                    b.Navigation("lstStudents");
                 });
 #pragma warning restore 612, 618
         }

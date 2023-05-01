@@ -26,6 +26,16 @@ namespace CQRSArch.Persistence.Data.Repositories
             return dbSet.AsEnumerable();
         }
 
+        public async Task<IReadOnlyList<TEntity>> GetAllAsync()
+        {
+            return await dbSet.ToListAsync();
+        }
+
+        //public async Task<List<TEntity>> GetAllAsync()
+        //{
+        //    return await dbSet.ToListAsync();
+        //}
+
         public TEntity GetFirst(Expression<Func<TEntity, bool>>? where)
         {
             return dbSet.Where(where).FirstOrDefault();
@@ -74,11 +84,6 @@ namespace CQRSArch.Persistence.Data.Repositories
             return await dbSet.FindAsync(Id);
         }
 
-        public async Task<List<TEntity>> GetAllAsync()
-        {
-            return await dbSet.ToListAsync();
-        }
-
         public async Task<TEntity> GetFirstAsync(Expression<Func<TEntity, bool>>? where)
         {
             return await dbSet.Where(where).FirstOrDefaultAsync();
@@ -99,6 +104,13 @@ namespace CQRSArch.Persistence.Data.Repositories
         public void Add(TEntity entity)
         {
             CqrsDbContext.Add(entity);
+        }
+
+        public async Task<TEntity> AddAsync(TEntity entity)
+        {
+            await CqrsDbContext.AddAsync(entity);
+            await CommitAsync();
+            return entity;
         }
 
         public void Update(TEntity entity)
@@ -124,6 +136,16 @@ namespace CQRSArch.Persistence.Data.Repositories
             #endregion
         }
 
+        public async Task UpdateAsync(TEntity entity)
+        {
+            if (entity == null) throw new ArgumentException("Entity is null");
+            CqrsDbContext.Entry(entity).State = EntityState.Modified;
+            await CqrsDbContext.SaveChangesAsync();
+            //if (entity == null) throw new ArgumentException("Entity is null");
+            //CqrsDbContext.Attach(entity);
+            //CqrsDbContext.Entry(entity).State = EntityState.Modified;
+        }
+
         public void Delete(object id)
         {
             var entity = GetById(id);
@@ -136,6 +158,12 @@ namespace CQRSArch.Persistence.Data.Repositories
             if (CqrsDbContext.Entry(entity).State == EntityState.Detached)
                 dbSet.Attach(entity);
             dbSet.Remove(entity);
+        }
+
+        public async Task DeleteAsync(TEntity entity)
+        {
+            CqrsDbContext.Set<TEntity>().Remove(entity);
+            await CommitAsync();
         }
 
         public void Delete(Expression<Func<TEntity, bool>>? where)
@@ -173,6 +201,7 @@ namespace CQRSArch.Persistence.Data.Repositories
         {
             return CqrsDbContext.SaveChangesAsync();
         }
+
 
     }
 }

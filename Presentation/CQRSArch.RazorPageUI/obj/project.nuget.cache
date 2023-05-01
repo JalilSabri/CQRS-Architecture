@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "+pFwUham6eFZ18FnfcvmtW8vULIeTt579G5O3WTq9Omrk0squCKH3pHOzTpeRuMJ8laCu9jkRtCIGSj3gguxig==",
+  "dgSpecHash": "U+DEZT/D/WkoXd9fQ6u3ItccZiWoTsEo6ruq5gIcaoTY8gsrpF+N2Ytx5XtV7giB4VryQ1UZZ0HtKzoIEVw4Xw==",
   "success": true,
   "projectFilePath": "F:\\Companies\\Github Projects\\Architectures\\CQRSArch\\Presentation\\CQRSArch.RazorPageUI\\CQRSArch.RazorPageUI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\JalilSabri\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "C:\\Users\\JalilSabri\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
     "C:\\Users\\JalilSabri\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
-    "C:\\Users\\JalilSabri\\.nuget\\packages\\mediatr\\11.0.0\\mediatr.11.0.0.nupkg.sha512",
+    "C:\\Users\\JalilSabri\\.nuget\\packages\\mediatr\\11.1.0\\mediatr.11.1.0.nupkg.sha512",
     "C:\\Users\\JalilSabri\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
     "C:\\Users\\JalilSabri\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.extensions\\6.0.0\\microsoft.aspnetcore.mvc.razor.extensions.6.0.0.nupkg.sha512",
     "C:\\Users\\JalilSabri\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.runtimecompilation\\6.0.0\\microsoft.aspnetcore.mvc.razor.runtimecompilation.6.0.0.nupkg.sha512",

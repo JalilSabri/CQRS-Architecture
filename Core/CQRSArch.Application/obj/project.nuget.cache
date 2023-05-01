@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "No5PFVfEd9mi9Hc3k/u5vPpoexEflX0gPeO5em79hJvgXV5i/sGQ1TEmkrf3OOSMCv/tx3cFsrUD5WqZSkYi8A==",
+  "dgSpecHash": "VZXsCnekPtJqtVtvQkaV2Isi5/uOvwmC9Ea1wxB245Ev31G0+Wwi+F0BkmsCtvv32tbOnMhkw/BzfrhOTRjl5w==",
   "success": true,
   "projectFilePath": "F:\\Companies\\Github Projects\\Architectures\\CQRSArch\\Core\\CQRSArch.Application\\CQRSArch.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\JalilSabri\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "C:\\Users\\JalilSabri\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
-    "C:\\Users\\JalilSabri\\.nuget\\packages\\mediatr\\11.0.0\\mediatr.11.0.0.nupkg.sha512",
+    "C:\\Users\\JalilSabri\\.nuget\\packages\\mediatr\\11.1.0\\mediatr.11.1.0.nupkg.sha512",
     "C:\\Users\\JalilSabri\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
     "C:\\Users\\JalilSabri\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\JalilSabri\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",

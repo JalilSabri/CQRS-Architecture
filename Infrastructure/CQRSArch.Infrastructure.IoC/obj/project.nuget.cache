@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "3MMOLHzdkKOppfif67Azt0IKn01FZ+BPjWyg63d0qNWuc/e2pfKxEyRUk0ZJsooWADmWQs5eOQ2atcxjgJF6CA==",
+  "dgSpecHash": "EYI7lby4vxw2mAVyutLaajfPova1q2mDbNkmdjuL/mxOyJkt+BD8VaS4Nw7pcW+hIh/S2PcPXjRbb1xzT2f3Ag==",
   "success": true,
   "projectFilePath": "F:\\Companies\\Github Projects\\Architectures\\CQRSArch\\Infrastructure\\CQRSArch.Infrastructure.IoC\\CQRSArch.Infrastructure.IoC.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\JalilSabri\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "C:\\Users\\JalilSabri\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
-    "C:\\Users\\JalilSabri\\.nuget\\packages\\mediatr\\11.0.0\\mediatr.11.0.0.nupkg.sha512",
+    "C:\\Users\\JalilSabri\\.nuget\\packages\\mediatr\\11.1.0\\mediatr.11.1.0.nupkg.sha512",
     "C:\\Users\\JalilSabri\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
     "C:\\Users\\JalilSabri\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\JalilSabri\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",

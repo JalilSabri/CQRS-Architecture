@@ -4,7 +4,8 @@ using Microsoft.EntityFrameworkCore;
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
 builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
-DependenciesContainer.InjectServices(builder.Services, builder.Configuration.GetConnectionString("CQRSArchConnectionString"));
+builder.Services.RegisterServices(builder.Configuration);
+//DependenciesContainer.InjectServices(builder.Services, builder.Configuration.GetConnectionString("CQRSArchConnectionString"));
 
 var app = builder.Build();
 
